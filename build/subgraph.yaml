@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Calculator
@@ -19,7 +19,7 @@ dataSources:
         - Substraction
       abis:
         - name: Calculator
-          file: ./abis/Calculator.json
+          file: Calculator/abis/Calculator.json
       eventHandlers:
         - event: Add(uint256,uint256,uint256)
           handler: handleAdd
@@ -29,4 +29,4 @@ dataSources:
           handler: handleMultiplication
         - event: Substraction(uint256,uint256,uint256)
           handler: handleSubstraction
-      file: ./src/mapping.ts
+      file: Calculator/Calculator.wasm

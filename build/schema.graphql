@@ -1,0 +1,27 @@
+type Add @entity {
+  id: ID!
+  num1: BigInt! # uint256
+  num2: BigInt! # uint256
+  result: BigInt! # uint256
+}
+
+type Divide @entity {
+  id: ID!
+  num1: BigInt! # uint256
+  num2: BigInt! # uint256
+  result: BigInt! # uint256
+}
+
+type Multiplication @entity {
+  id: ID!
+  num1: BigInt! # uint256
+  num2: BigInt! # uint256
+  result: BigInt! # uint256
+}
+
+type Substraction @entity {
+  id: ID!
+  num1: BigInt! # uint256
+  num2: BigInt! # uint256
+  result: BigInt! # uint256
+}
